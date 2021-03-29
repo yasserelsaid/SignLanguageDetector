@@ -56,6 +56,7 @@ export default function detector() {
         <Webcam
           ref={webcamRef}
           muted={true}
+          mirrored={true}
           style={{
             width: 640,
             height: 480,
