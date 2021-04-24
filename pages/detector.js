@@ -15,7 +15,9 @@ export default function Index() {
   return (
     <Container maxWidth='sm'>
       <Box my={4}>
-        <div className={classes.main}></div>
+        <div className={classes.main}>
+          <Detector />
+        </div>
       </Box>
     </Container>
   );

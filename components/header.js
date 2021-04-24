@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     // display: 'none',
   },
+  link: {
+    paddingLeft: '20px',
+  },
   tooltipContent: {
     fontSize: '14px',
     lineHeight: '17px',
@@ -50,6 +53,21 @@ export default function SearchAppBar() {
           <Typography className={classes.title} variant='h6' noWrap>
             <Link href='/'>
               <a>Sign Language Detector</a>
+            </Link>
+          </Typography>
+          <Typography className={classes.link} variant='subtitle1' noWrap>
+            <Link href='/detector'>
+              <a>Detector</a>
+            </Link>
+          </Typography>
+          <Typography className={classes.link} variant='subtitle1' noWrap>
+            <Link href='/UNSDG'>
+              <a>UNSDG</a>
+            </Link>
+          </Typography>
+          <Typography className={classes.link} variant='subtitle1' noWrap>
+            <Link href='/about'>
+              <a>about</a>
             </Link>
           </Typography>
         </Toolbar>
