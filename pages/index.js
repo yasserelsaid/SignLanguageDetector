@@ -10,23 +10,35 @@ import Link from "next/link";
 const useStyles = makeStyles((theme) => ({
   container: {},
 
-  main: { height: "60vh", background: "#273036", zIndex: "1" },
+  main: {
+    height: "75vh",
+    background: "#273036",
+    zIndex: "1",
+    display: "flex",
+    flexDirection: "row",
+  },
   img: {
     height: "500px",
     borderRadius: "20px",
     margin: "16px",
   },
   signup: {
-    position: "absolute",
-    top: "35%",
-    marginLeft: "20%",
+    width: "50%",
+    margin: "auto",
+    display: "flex",
+    flexDirection: "column",
+    paddingTop: "10%",
     color: "white",
     fontFamily: "Poppins",
     zIndex: "1",
+    marginBottom: "24px",
+    height: "800px",
   },
   subtitle: {
-    width: "80%",
+    width: "60%",
     margin: "auto",
+
+    paddingTop: "5%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -60,10 +72,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "25px",
   },
   landingImgContainer: {
-    position: "absolute",
-    top: "28%",
-    right: "8%",
-    borderRadius: "25px",
+    width: "30%",
+    marginTop: "auto",
   },
 }));
 
@@ -81,19 +91,18 @@ export default function Index() {
             </a>
           </Link>
         </div>
-
         <div className={classes.landingImgContainer}>
-          <img src="/home_page_sign.png"></img>
+          <img height="688" src="/home_page_sign.png"></img>
         </div>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#273036"
           fill-opacity="1"
           d="M0,320L60,293.3C120,267,240,213,360,170.7C480,128,600,96,720,117.3C840,139,960,213,1080,240C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
-      </svg>
+      </svg> */}
       <div className={classes.subtitle}>
         <div className={classes.iconContainer}>
           <img
