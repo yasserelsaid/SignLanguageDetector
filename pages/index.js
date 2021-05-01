@@ -80,20 +80,6 @@ export default function Index() {
           d="M0,320L60,293.3C120,267,240,213,360,170.7C480,128,600,96,720,117.3C840,139,960,213,1080,240C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
       </svg>
-      <div className={classes.imgContainer}>
-        <img
-          className={classes.img}
-          src="https://images.pexels.com/photos/4629633/pexels-photo-4629633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        ></img>
-        <img
-          className={classes.img}
-          src="https://images.pexels.com/photos/4629634/pexels-photo-4629634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        ></img>
-        <img
-          className={classes.img}
-          src="https://images.pexels.com/photos/4629625/pexels-photo-4629625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        ></img>
-      </div>
       <div className={classes.subtitle}>
         <h1>How can innovative technologies promote reduced inequalities?</h1>
         <p>
@@ -108,6 +94,20 @@ export default function Index() {
           hearing, the model will help them in communicating effectively thereby
           cultivating EDI (Equity, Diversity & Inclusivity) in society.
         </p>
+      </div>
+      <div className={classes.imgContainer}>
+        <img
+          className={classes.img}
+          src="https://images.pexels.com/photos/4629633/pexels-photo-4629633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        ></img>
+        <img
+          className={classes.img}
+          src="https://images.pexels.com/photos/4629634/pexels-photo-4629634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        ></img>
+        <img
+          className={classes.img}
+          src="https://images.pexels.com/photos/4629625/pexels-photo-4629625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        ></img>
       </div>
     </div>
   );
