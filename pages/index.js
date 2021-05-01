@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import Detector from '../pages-sections/index/detector';
 
 import { makeStyles } from '@material-ui/core/styles';
+import Link from 'next/link';
 
 const useStyles = makeStyles(theme => ({
   container: {},
@@ -42,12 +43,20 @@ const useStyles = makeStyles(theme => ({
     marginLeft: '6%',
   },
   btn: {
-    '&hover': {
-      color: 'red',
+    '&:hover': {
+      color: '#fff',
+      background: theme.palette.primary.main,
+      cursor: 'pointer',
     },
     background: 'white',
     border: 'none',
     padding: '16px',
+    borderRadius: '25px',
+  },
+  landingImgContainer: {
+    position: 'absolute',
+    top: '28%',
+    right: '8%',
     borderRadius: '25px',
   },
 }));
@@ -60,7 +69,11 @@ export default function Index() {
         <div className={classes.signup}>
           <h1 className={classes.h1}>Sign Language Conversion</h1>
           <h1>Accessibility For All</h1>
-          <button className={classes.btn}>Access the Detector</button>
+          <Link href='/detector'>
+            <a>
+              <button className={classes.btn}>Access the Detector</button>
+            </a>
+          </Link>
         </div>
         <div className={classes.iconContainer}>
           <img
@@ -68,7 +81,11 @@ export default function Index() {
             className={classes.icon}
           ></img>
         </div>
+        <div className={classes.landingImgContainer}>
+          <img src='/home_page_sign.png'></img>
+        </div>
       </div>
+
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
         <path
           fill='#273036'
