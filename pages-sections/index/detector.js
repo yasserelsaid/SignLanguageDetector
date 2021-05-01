@@ -1,15 +1,18 @@
 import React, { useRef, useState, useEffect } from 'react';
 import * as tmImage from '@teachablemachine/image';
 import Webcam from 'react-webcam';
-
+import ProgressBar from '../../components/progressBar';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
-    flexDirection: 'column',
+    // flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  predictions: {
+    padding: '40px',
   },
 }));
 
@@ -60,18 +63,17 @@ export default function detector() {
           style={{
             width: 640,
             height: 480,
+            borderRadius: '10px',
           }}
         />
       </div>
-      <div>
-        {predictions.map(
-          prediction =>
-            prediction.probability >= 0.6 && (
-              <h2 key={prediction.className}>
-                {prediction.className} : {prediction.probability.toFixed(2)}{' '}
-              </h2>
-            )
-        )}
+      <div className={classes.predictions}>
+        {predictions.map(prediction => (
+          <>
+            <h2 key={prediction.className}>{prediction.className}</h2>
+            <ProgressBar progress={prediction.probability.toFixed(2)} />
+          </>
+        ))}
       </div>
     </div>
   );

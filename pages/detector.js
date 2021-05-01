@@ -7,7 +7,7 @@ import Detector from '../pages-sections/index/detector';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
-  main: { height: '70vh' },
+  main: { minHeight: '70vh' },
 }));
 
 export default function Index() {
