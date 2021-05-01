@@ -27,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     width: "80%",
     margin: "auto",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
   h1: {
     fontSize: "4em",
@@ -42,9 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
   icon: { height: "200px", borderRadius: "10px" },
   iconContainer: {
-    position: "absolute",
-    top: "38%",
-    marginLeft: "6%",
+    margin: "auto",
   },
   btn: {
     "&:hover": {
@@ -79,12 +81,7 @@ export default function Index() {
             </a>
           </Link>
         </div>
-        <div className={classes.iconContainer}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Sustainable_Development_Goal_10.png"
-            className={classes.icon}
-          ></img>
-        </div>
+
         <div className={classes.landingImgContainer}>
           <img src="/home_page_sign.png"></img>
         </div>
@@ -98,6 +95,12 @@ export default function Index() {
         ></path>
       </svg>
       <div className={classes.subtitle}>
+        <div className={classes.iconContainer}>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Sustainable_Development_Goal_10.png"
+            className={classes.icon}
+          ></img>
+        </div>
         <h1>How can innovative technologies promote reduced inequalities?</h1>
         <p>
           Applications and software technologies have now become essential and
