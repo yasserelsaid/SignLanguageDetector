@@ -24,7 +24,7 @@ export default function detector() {
 
   // Main function
   const runCoco = async () => {
-    const URL = 'https://teachablemachine.withgoogle.com/models/mVoKauKKR/';
+    const URL = 'https://teachablemachine.withgoogle.com/models/4RPq2vEUk/';
     const modelURL = URL + 'model.json';
     const metadataURL = URL + 'metadata.json';
 
