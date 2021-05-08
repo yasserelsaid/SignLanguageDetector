@@ -1,79 +1,79 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Detector from "../pages-sections/index/detector";
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import Detector from '../pages-sections/index/detector';
 
-import { makeStyles } from "@material-ui/core/styles";
-import Link from "next/link";
+import { makeStyles } from '@material-ui/core/styles';
+import Link from 'next/link';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   container: {},
 
   main: {
-    height: "75vh",
-    background: "#273036",
-    zIndex: "1",
-    display: "flex",
-    flexDirection: "row",
+    height: '100vh',
+    background: '#273036',
+    zIndex: '1',
+    display: 'flex',
+    flexDirection: 'row',
   },
   img: {
-    height: "500px",
-    borderRadius: "20px",
-    margin: "16px",
+    height: '500px',
+    borderRadius: '20px',
+    margin: '16px',
   },
   signup: {
-    width: "50%",
-    margin: "auto",
-    display: "flex",
-    flexDirection: "column",
-    paddingTop: "10%",
-    color: "white",
-    fontFamily: "Poppins",
-    zIndex: "1",
-    marginBottom: "24px",
-    height: "800px",
+    width: '50%',
+    margin: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    paddingTop: '10%',
+    color: 'white',
+    fontFamily: 'Poppins',
+    zIndex: '1',
+    marginBottom: '24px',
+    height: '800px',
   },
   subtitle: {
-    width: "60%",
-    margin: "auto",
+    width: '60%',
+    margin: 'auto',
 
-    paddingTop: "5%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    paddingTop: '5%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   h1: {
-    fontSize: "4em",
+    fontSize: '4em',
   },
   imgContainer: {
-    width: "100%",
-    margin: "auto",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
+    width: '100%',
+    margin: 'auto',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
-  icon: { height: "200px", borderRadius: "10px" },
+  icon: { height: '200px', borderRadius: '10px' },
   iconContainer: {
-    margin: "auto",
+    margin: 'auto',
   },
   btn: {
-    "&:hover": {
-      color: "#fff",
+    '&:hover': {
+      color: '#fff',
       background: theme.palette.primary.main,
-      cursor: "pointer",
+      cursor: 'pointer',
     },
-    background: "white",
-    border: "none",
-    padding: "16px",
-    borderRadius: "25px",
+    background: 'white',
+    border: 'none',
+    padding: '16px',
+    borderRadius: '25px',
   },
   landingImgContainer: {
-    width: "30%",
-    marginTop: "auto",
+    width: '35%',
+    marginTop: 'auto',
   },
 }));
 
@@ -85,14 +85,14 @@ export default function Index() {
         <div className={classes.signup}>
           <h1 className={classes.h1}>Sign Language Conversion</h1>
           <h1>Accessibility For All</h1>
-          <Link href="/detector">
+          <Link href='/detector'>
             <a>
               <button className={classes.btn}>Access the Detector</button>
             </a>
           </Link>
         </div>
         <div className={classes.landingImgContainer}>
-          <img height="688" src="/home_page_sign.png"></img>
+          <img height='688' src='/home_page_sign.png'></img>
         </div>
       </div>
 
@@ -106,7 +106,7 @@ export default function Index() {
       <div className={classes.subtitle}>
         <div className={classes.iconContainer}>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Sustainable_Development_Goal_10.png"
+            src='https://upload.wikimedia.org/wikipedia/commons/d/d4/Sustainable_Development_Goal_10.png'
             className={classes.icon}
           ></img>
         </div>
@@ -127,15 +127,15 @@ export default function Index() {
       <div className={classes.imgContainer}>
         <img
           className={classes.img}
-          src="https://images.pexels.com/photos/4629633/pexels-photo-4629633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src='https://images.pexels.com/photos/4629633/pexels-photo-4629633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         ></img>
         <img
           className={classes.img}
-          src="https://images.pexels.com/photos/4629634/pexels-photo-4629634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src='https://images.pexels.com/photos/4629634/pexels-photo-4629634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         ></img>
         <img
           className={classes.img}
-          src="https://images.pexels.com/photos/4629625/pexels-photo-4629625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src='https://images.pexels.com/photos/4629625/pexels-photo-4629625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         ></img>
       </div>
     </div>
