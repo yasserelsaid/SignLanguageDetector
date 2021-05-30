@@ -24,10 +24,10 @@ export default function detector() {
 
   // Main function
   const runCoco = async () => {
-    // Yasser's Model
+    // Yasser's old model
     // const URL = 'https://teachablemachine.withgoogle.com/models/4RPq2vEUk/';
-    // Jazz's Model
-    const URL = 'https://teachablemachine.withgoogle.com/models/97xpqXcg2/';
+    // Yasser's new model
+    const URL = 'https://teachablemachine.withgoogle.com/models/drfSeVYyL/';
     const modelURL = URL + 'model.json';
     const metadataURL = URL + 'metadata.json';
 
